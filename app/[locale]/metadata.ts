@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 
-export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
-  const isPortuguese = params.locale === 'pt';
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const isPortuguese = locale === 'pt';
   
   const title = isPortuguese 
     ? 'Aetherion Investment Partners | Gestão de Investimentos' 
@@ -40,7 +41,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       description,
       url: 'https://aetherion.com',
       siteName: 'Aetherion Investment Partners',
-      locale: params.locale === 'pt' ? 'pt_PT' : 'en_US',
+      locale: locale === 'pt' ? 'pt_PT' : 'en_US',
       type: 'website',
       images: [
         {
