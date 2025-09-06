@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Fontes customizadas */
+    --font-sans: var(--font-inter);
+    --font-serif: var(--font-playfair);
+    --font-display: var(--font-crimson);
+    
+    /* Cores principais - Preto e Branco */
+    --white: 255 255 255;
+    --black: 0 0 0;
+    
+    /* Escala de cinzas */
+    --gray-50: 250 250 250;
+    --gray-100: 245 245 245;
+    --gray-200: 229 229 229;
+    --gray-300: 212 212 212;
+    --gray-400: 163 163 163;
+    --gray-500: 115 115 115;
+    --gray-600: 82 82 82;
+    --gray-700: 64 64 64;
+    --gray-800: 38 38 38;
+    --gray-900: 23 23 23;
+    
+    /* Mapeamento semântico - PRETO PREDOMINANTE */
+    --background: var(--black);
+    --foreground: var(--white);
+    --card: var(--gray-900);
+    --card-foreground: var(--white);
+    --muted: var(--gray-800);
+    --muted-foreground: var(--gray-300);
+    --border: var(--gray-800);
+    --input: var(--gray-900);
+    
+    /* Cores de ação */
+    --primary: var(--white);
+    --primary-foreground: var(--black);
+    --secondary: var(--gray-800);
+    --secondary-foreground: var(--white);
+    --accent: var(--gray-100);
+    --accent-foreground: var(--black);
+    
+    /* Outros */
+    --ring: var(--gray-600);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Modo escuro - inverte preto e branco */
+    --background: var(--black);
+    --foreground: var(--white);
+    --card: var(--gray-900);
+    --card-foreground: var(--white);
+    --muted: var(--gray-800);
+    --muted-foreground: var(--gray-300);
+    --border: var(--gray-800);
+    --input: var(--gray-800);
+    --primary: var(--white);
+    --primary-foreground: var(--black);
+    --secondary: var(--gray-800);
+    --secondary-foreground: var(--white);
+    --accent: var(--gray-100);
+    --accent-foreground: var(--black);
+    --ring: var(--gray-600);
+  }
+  
+  * {
+    border-color: rgb(var(--border));
+  }
+  
+  body {
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  /* Classes utilitárias customizadas */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Animações suaves */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  /* Efeitos de hover */
+  .hover-lift {
+    @apply hover:-translate-y-1 transition-transform duration-300;
+  }
+  
+  /* Gradientes em preto e branco */
+  .gradient-fade {
+    @apply bg-gradient-to-b from-transparent to-black/5;
+  }
+  
+  .gradient-fade-dark {
+    @apply bg-gradient-to-b from-transparent to-white/5;
+  }
+}

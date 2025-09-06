@@ -1,0 +1,78 @@
+{
+  "navigation": {
+    "home": "Início",
+    "whoWeAre": "Quem Somos",
+    "ourFocus": "Nosso Foco",
+    "whatWeDo": "O Que Fazemos",
+    "partners": "Parceiros",
+    "trackRecord": "Histórico",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Investindo no Futuro",
+    "subtitle": "Soluções inovadoras em gestão de investimentos",
+    "cta": "Saiba Mais"
+  },
+  "whoWeAre": {
+    "title": "Quem Somos",
+    "description": "Somos uma empresa especializada em gestão de investimentos, comprometida com a excelência e resultados sustentáveis.",
+    "values": {
+      "title": "Nossos Valores",
+      "integrity": "Integridade",
+      "excellence": "Excelência",
+      "innovation": "Inovação",
+      "partnership": "Parceria"
+    }
+  },
+  "ourFocus": {
+    "title": "Nosso Foco",
+    "areas": {
+      "private": "Private Equity",
+      "real": "Real Estate",
+      "venture": "Venture Capital",
+      "infrastructure": "Infraestrutura"
+    }
+  },
+  "whatWeDo": {
+    "title": "O Que Fazemos",
+    "services": {
+      "management": "Gestão de Ativos",
+      "advisory": "Consultoria Financeira",
+      "structuring": "Estruturação de Fundos",
+      "analysis": "Análise de Investimentos"
+    }
+  },
+  "partners": {
+    "title": "Parceiros Executivos",
+    "team": "Nossa Equipe"
+  },
+  "trackRecord": {
+    "title": "Histórico",
+    "yearsExperience": "Anos de Experiência",
+    "assetsManaged": "Ativos Sob Gestão",
+    "investments": "Investimentos Realizados",
+    "returns": "Retorno Médio"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "form": {
+      "name": "Nome",
+      "email": "E-mail",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente."
+    },
+    "info": {
+      "address": "Endereço",
+      "phone": "Telefone",
+      "email": "E-mail"
+    }
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso"
+  }
+}

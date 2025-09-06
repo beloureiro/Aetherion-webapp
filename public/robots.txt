@@ -1,0 +1,33 @@
+# Aetherion Investment Partners
+# https://www.aetherion.com/
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://www.aetherion.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Major Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /

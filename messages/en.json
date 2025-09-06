@@ -1,0 +1,78 @@
+{
+  "navigation": {
+    "home": "Home",
+    "whoWeAre": "Who We Are",
+    "ourFocus": "Our Focus",
+    "whatWeDo": "What We Do",
+    "partners": "Partners",
+    "trackRecord": "Track Record",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Investing in the Future",
+    "subtitle": "Innovative investment management solutions",
+    "cta": "Learn More"
+  },
+  "whoWeAre": {
+    "title": "Who We Are",
+    "description": "We are a company specialized in investment management, committed to excellence and sustainable results.",
+    "values": {
+      "title": "Our Values",
+      "integrity": "Integrity",
+      "excellence": "Excellence",
+      "innovation": "Innovation",
+      "partnership": "Partnership"
+    }
+  },
+  "ourFocus": {
+    "title": "Our Focus",
+    "areas": {
+      "private": "Private Equity",
+      "real": "Real Estate",
+      "venture": "Venture Capital",
+      "infrastructure": "Infrastructure"
+    }
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "services": {
+      "management": "Asset Management",
+      "advisory": "Financial Advisory",
+      "structuring": "Fund Structuring",
+      "analysis": "Investment Analysis"
+    }
+  },
+  "partners": {
+    "title": "Executive Partners",
+    "team": "Our Team"
+  },
+  "trackRecord": {
+    "title": "Track Record",
+    "yearsExperience": "Years of Experience",
+    "assetsManaged": "Assets Under Management",
+    "investments": "Investments Made",
+    "returns": "Average Return"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again."
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  }
+}
