@@ -1,14 +1,23 @@
-# Aetherion Investment Partners
+# Aetherion - Empowering Lives for Generations
 
-A modern, sophisticated investment management website built with Next.js 15, TypeScript, and Tailwind CSS.
+A modern, sophisticated urban development and real assets management website built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## 🌟 Overview
 
-Aetherion is a professional investment management platform featuring a minimalist black and white design inspired by leading financial institutions. The website emphasizes tradition, sobriety, and technological innovation.
+Aetherion specializes in non-traditional real assets, transforming communities through sustainable investments. Our platform features a minimalist black and white design that emphasizes our commitment to sustainability, generational impact, and strategic partnerships.
+
+## 🏗️ Business Areas
+
+Aetherion operates through **three specialized divisions**:
+
+1. **Industrial & Logistics** - Supply-demand solutions in logistics and industrial sectors
+2. **Land Bank** - Real estate asset management and development
+3. **Hospitality & Residential** - Development of accommodation and living spaces
 
 ## 🚀 Features
 
 - **Modern Tech Stack**: Next.js 15, TypeScript, React 19
+- **Dynamic Theme Switcher**: Temporary color preview system (black/blue themes)
 - **Internationalization**: Full support for Portuguese and English
 - **Responsive Design**: 100% mobile-first approach
 - **SEO Optimized**: Complete meta tags, sitemap, and structured data
@@ -78,12 +87,16 @@ Aetherion-webapp/
 
 ## 🎨 Design System
 
-The website follows a sophisticated black and white color scheme:
+The website features a sophisticated minimalist design with dynamic theme support:
 
-- **Primary**: Black (#000000)
-- **Secondary**: White (#FFFFFF)
+- **Default Theme**: Black (#000000) - Traditional elegance
+- **Alternative Theme**: Deep Blue (#152A3B) - Modern sophistication
+- **Theme Switcher**: Temporary preview system for client decision
 - **Grays**: Multiple shades for hierarchy
-- **Typography**: Playfair Display (serif) for headings, Inter for body text
+- **Typography**:
+  - Playfair Display (serif) for headings
+  - Inter for body text
+  - Crimson Text for display elements
 
 ## 🌍 Internationalization
 
@@ -128,15 +141,19 @@ Key configuration files:
 
 ## 📄 License
 
-Private and Confidential - Aetherion Investment Partners
+Private and Confidential - Aetherion
 
 ## 👥 Contact
 
-**Aetherion Investment Partners**  
-Avenida da Liberdade, 245  
-1250-142 Lisboa, Portugal  
-+351 21 123 4567  
+**Aetherion - Empowering Lives for Generations**
+Avenida da Liberdade, 245
+1250-142 Lisboa, Portugal
++351 21 123 4567
 contact@aetherion.com
+
+## 🎯 Mission
+
+We invest in non-traditional real assets, leveraging our extensive network and unique strategic partnerships to create outstanding value in supply-demand imbalanced sectors. Our goal is to build thriving communities that impact generations.
 
 ---
 

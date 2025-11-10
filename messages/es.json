@@ -1,0 +1,115 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "whoWeAre": "Quiénes Somos",
+    "ourFocus": "Áreas de Negocio",
+    "whatWeDo": "Qué Hacemos",
+    "partners": "Socios",
+    "trackRecord": "Nuestro Impacto",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Empowering Lives for Generations",
+    "subtitle": "Transformando comunidades a través de inversiones sostenibles en activos reales no tradicionales",
+    "cta": "Descubre Nuestra Misión"
+  },
+  "whoWeAre": {
+    "title": "Quiénes Somos",
+    "description": "Somos especialistas en activos reales no tradicionales, aprovechando nuestra extensa red y alianzas estratégicas únicas para crear valor excepcional en sectores con desequilibrio entre oferta y demanda. Nuestra misión es construir comunidades prósperas que impactan generaciones.",
+    "intro": "Aetherion es una plataforma de inversiones enfocada en el desarrollo urbano y gestión de activos reales no tradicionales. Fundada con la misión de transformar comunidades, combinamos experiencia en inversiones con visión a largo plazo para crear valor sostenible.",
+    "philosophy": "Nuestro enfoque se construye sobre el alineamiento de intereses con nuestros socios e inversores. Creemos que el éxito se mide no solo en retornos financieros, sino en el impacto positivo que generamos en las comunidades donde operamos.",
+    "values": {
+      "title": "Nuestros Pilares",
+      "integrity": "Sostenibilidad",
+      "integrityDesc": "Compromiso con el desarrollo responsable y consciente para preservar el medio ambiente",
+      "excellence": "Impacto Generacional",
+      "excellenceDesc": "Creamos valor que trasciende generaciones, construyendo legados duraderos",
+      "innovation": "Comunidades Prósperas",
+      "innovationDesc": "Desarrollamos proyectos que transforman y fortalecen las comunidades locales",
+      "partnership": "Alianzas Estratégicas",
+      "partnershipDesc": "Cultivamos relaciones de largo plazo basadas en confianza y resultados mutuos"
+    }
+  },
+  "ourFocus": {
+    "title": "Áreas de Negocio",
+    "subtitle": "Tres divisiones especializadas enfocadas en activos reales no tradicionales",
+    "areas": {
+      "private": "Industrial & Logistics",
+      "privateDesc": "Soluciones en cadena de suministros y almacenaje en sectores de activos reales no tradicionales, aprovechando desequilibrios entre oferta y demanda.",
+      "real": "Land Bank",
+      "realDesc": "Adquisición estratégica de tierras e iniciativas de desarrollo con foco en creación de valor a largo plazo.",
+      "venture": "Hospitality & Residential",
+      "ventureDesc": "Desarrollo de emprendimientos de alojamiento y espacios residenciales que crean comunidades vibrantes."
+    }
+  },
+  "whatWeDo": {
+    "title": "Qué Hacemos",
+    "intro": "Ofrecemos servicios especializados en gestión y desarrollo de activos reales no tradicionales",
+    "services": {
+      "management": "Desarrollo Urbano",
+      "managementDesc": "Transformamos espacios urbanos a través de proyectos innovadores que equilibran sostenibilidad y crecimiento económico.",
+      "advisory": "Soluciones Logísticas",
+      "advisoryDesc": "Desarrollamos infraestructura logística e industrial para atender demandas del mercado moderno.",
+      "structuring": "Gestión de Portafolio Inmobiliario",
+      "structuringDesc": "Gestión activa de activos inmobiliarios con foco en maximización de valor y desempeño operacional.",
+      "analysis": "Estructuración de Alianzas",
+      "analysisDesc": "Creamos estructuras de alianza alineadas que potencian resultados y dividen riesgos de forma equilibrada."
+    }
+  },
+  "partners": {
+    "title": "Socios Ejecutivos",
+    "subtitle": "Liderazgo experimentado con historial comprobado en inversiones y desarrollo",
+    "team": "Nuestro Equipo",
+    "members": {
+      "member1": {
+        "name": "Juan Silva",
+        "role": "Socio Director",
+        "experience": "20+ años"
+      },
+      "member2": {
+        "name": "María Santos",
+        "role": "Directora Financiera",
+        "experience": "15+ años"
+      },
+      "member3": {
+        "name": "Pedro Costa",
+        "role": "Director de Inversiones",
+        "experience": "18+ años"
+      },
+      "member4": {
+        "name": "Ana Ferreira",
+        "role": "Directora de Operaciones",
+        "experience": "12+ años"
+      }
+    }
+  },
+  "trackRecord": {
+    "title": "Nuestro Impacto",
+    "yearsExperience": "Años Transformando Comunidades",
+    "assetsManaged": "Valor en Activos Desarrollados",
+    "investments": "Proyectos Completados",
+    "returns": "Tasa de Éxito"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Error al enviar mensaje. Inténtalo de nuevo."
+    },
+    "info": {
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Correo Electrónico"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso"
+  }
+}

@@ -3,10 +3,11 @@ import { locales } from './i18n/request';
 
 export default createMiddleware({
   locales,
-  defaultLocale: 'pt',
-  localePrefix: 'always'
+  defaultLocale: 'es',
+  localePrefix: 'always',
+  localeDetection: false
 });
 
 export const config = {
-  matcher: ['/', '/(pt|en)/:path*']
+  matcher: ['/', '/(es|pt|en)/:path*']
 };

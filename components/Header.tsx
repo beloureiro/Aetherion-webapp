@@ -35,7 +35,11 @@ export default function Header() {
   ];
 
   const switchLocale = () => {
-    const newLocale = locale === 'pt' ? 'en' : 'pt';
+    let newLocale = 'es';
+    if (locale === 'es') newLocale = 'pt';
+    else if (locale === 'pt') newLocale = 'en';
+    else if (locale === 'en') newLocale = 'es';
+
     const path = pathname.replace(`/${locale}`, `/${newLocale}`);
     router.push(path);
   };
@@ -45,7 +49,7 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/95 backdrop-blur-md shadow-lg border-b border-gray-800' : 'bg-transparent'
+        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg border-b border-border' : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,14 +76,14 @@ export default function Header() {
             >
               <Globe className="w-4 h-4" />
               <span className="text-sm font-medium">
-                {locale === 'pt' ? 'EN' : 'PT'}
+                {locale === 'es' ? 'PT' : locale === 'pt' ? 'EN' : 'ES'}
               </span>
             </button>
           </div>
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md hover:bg-gray-800 transition-colors text-white"
+            className="lg:hidden p-2 rounded-md hover:bg-muted transition-colors text-white"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -93,7 +97,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-black border-t border-gray-800"
+            className="lg:hidden bg-background border-t border-border"
           >
             <div className="container mx-auto px-4 py-4 space-y-4">
               {navItems.map((item) => (
@@ -113,7 +117,7 @@ export default function Header() {
               >
                 <Globe className="w-4 h-4" />
                 <span>
-                  {locale === 'pt' ? 'Switch to English' : 'Mudar para Português'}
+                  {locale === 'es' ? 'Mudar para Português' : locale === 'pt' ? 'Switch to English' : 'Cambiar a Español'}
                 </span>
               </button>
             </div>

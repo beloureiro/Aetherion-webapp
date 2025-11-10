@@ -2,56 +2,93 @@
   "navigation": {
     "home": "Home",
     "whoWeAre": "Who We Are",
-    "ourFocus": "Our Focus",
+    "ourFocus": "Business Areas",
     "whatWeDo": "What We Do",
     "partners": "Partners",
-    "trackRecord": "Track Record",
+    "trackRecord": "Our Impact",
     "contact": "Contact"
   },
   "hero": {
-    "title": "Investing in the Future",
-    "subtitle": "Innovative investment management solutions",
-    "cta": "Learn More"
+    "title": "Empowering Lives for Generations",
+    "subtitle": "Transforming communities through sustainable investments in non-traditional real assets",
+    "cta": "Discover Our Mission"
   },
   "whoWeAre": {
     "title": "Who We Are",
-    "description": "We are a company specialized in investment management, committed to excellence and sustainable results.",
+    "description": "We are specialists in non-traditional real assets, leveraging our extensive network and unique strategic partnerships to create outstanding value in supply-demand imbalanced sectors. Our mission is to build thriving communities that impact generations.",
+    "intro": "Aetherion is an investment platform focused on urban development and non-traditional real asset management. Founded with the mission to transform communities, we combine investment expertise with a long-term vision to create sustainable value.",
+    "philosophy": "Our approach is built on aligning interests with our partners and investors. We believe that success is measured not only in financial returns but in the positive impact we generate in the communities where we operate.",
     "values": {
-      "title": "Our Values",
-      "integrity": "Integrity",
-      "excellence": "Excellence",
-      "innovation": "Innovation",
-      "partnership": "Partnership"
+      "title": "Our Pillars",
+      "integrity": "Sustainability",
+      "integrityDesc": "Commitment to responsible and conscious development to preserve the environment",
+      "excellence": "Generational Impact",
+      "excellenceDesc": "We create value that transcends generations, building lasting legacies",
+      "innovation": "Thriving Communities",
+      "innovationDesc": "We develop projects that transform and strengthen local communities",
+      "partnership": "Strategic Partnerships",
+      "partnershipDesc": "We cultivate long-term relationships based on trust and mutual results"
     }
   },
   "ourFocus": {
-    "title": "Our Focus",
+    "title": "Business Areas",
+    "subtitle": "Three specialized divisions focused on non-traditional real assets",
     "areas": {
-      "private": "Private Equity",
-      "real": "Real Estate",
-      "venture": "Venture Capital",
-      "infrastructure": "Infrastructure"
+      "private": "Industrial & Logistics",
+      "privateDesc": "Supply chain and warehousing solutions in non-traditional real asset sectors, leveraging supply-demand imbalances.",
+      "real": "Land Bank",
+      "realDesc": "Strategic land acquisition and development initiatives with focus on long-term value creation.",
+      "venture": "Hospitality & Residential",
+      "ventureDesc": "Development of accommodation and residential property ventures that create vibrant communities."
     }
   },
   "whatWeDo": {
     "title": "What We Do",
+    "intro": "We offer specialized services in non-traditional real asset management and development",
     "services": {
-      "management": "Asset Management",
-      "advisory": "Financial Advisory",
-      "structuring": "Fund Structuring",
-      "analysis": "Investment Analysis"
+      "management": "Urban Development",
+      "managementDesc": "We transform urban spaces through innovative projects that balance sustainability and economic growth.",
+      "advisory": "Logistics Solutions",
+      "advisoryDesc": "We develop logistics and industrial infrastructure to meet modern market demands.",
+      "structuring": "Real Estate Portfolio Management",
+      "structuringDesc": "Active management of real estate assets with focus on value maximization and operational performance.",
+      "analysis": "Partnership Structuring",
+      "analysisDesc": "We create aligned partnership structures that enhance results and balance risks fairly."
     }
   },
   "partners": {
     "title": "Executive Partners",
-    "team": "Our Team"
+    "subtitle": "Experienced leadership with proven track record in investments and development",
+    "team": "Our Team",
+    "members": {
+      "member1": {
+        "name": "John Silva",
+        "role": "Managing Partner",
+        "experience": "20+ years"
+      },
+      "member2": {
+        "name": "Maria Santos",
+        "role": "Chief Financial Officer",
+        "experience": "15+ years"
+      },
+      "member3": {
+        "name": "Peter Costa",
+        "role": "Chief Investment Officer",
+        "experience": "18+ years"
+      },
+      "member4": {
+        "name": "Ana Ferreira",
+        "role": "Chief Operating Officer",
+        "experience": "12+ years"
+      }
+    }
   },
   "trackRecord": {
-    "title": "Track Record",
-    "yearsExperience": "Years of Experience",
-    "assetsManaged": "Assets Under Management",
-    "investments": "Investments Made",
-    "returns": "Average Return"
+    "title": "Our Impact",
+    "yearsExperience": "Years Transforming Communities",
+    "assetsManaged": "Value in Developed Assets",
+    "investments": "Completed Projects",
+    "returns": "Success Rate"
   },
   "contact": {
     "title": "Get in Touch",

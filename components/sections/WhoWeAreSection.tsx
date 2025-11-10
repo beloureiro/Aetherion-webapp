@@ -19,8 +19,8 @@ export default function WhoWeAreSection() {
   ];
 
   return (
-    <section id="who-we-are" className="py-16 md:py-24 bg-gray-900 relative" ref={ref}>
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
+    <section id="who-we-are" className="py-16 md:py-24 bg-card relative" ref={ref}>
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,8 +32,14 @@ export default function WhoWeAreSection() {
             {t('title')}
           </h2>
           <div className="w-24 h-0.5 bg-white mx-auto mb-6" />
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-6">
             {t('description')}
+          </p>
+          <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto mb-4">
+            {t('intro')}
+          </p>
+          <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto">
+            {t('philosophy')}
           </p>
         </motion.div>
 
@@ -58,12 +64,15 @@ export default function WhoWeAreSection() {
                   transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
                   className="text-center group"
                 >
-                  <div className="inline-flex items-center justify-center w-20 h-20 mb-4 bg-gray-800 rounded-full group-hover:bg-white transition-colors">
+                  <div className="inline-flex items-center justify-center w-20 h-20 mb-4 bg-muted rounded-full group-hover:bg-white transition-colors">
                     <Icon className="w-10 h-10 text-white group-hover:text-black" />
                   </div>
-                  <h4 className="text-lg font-light tracking-wide text-white uppercase">
+                  <h4 className="text-lg font-light tracking-wide text-white uppercase mb-2">
                     {t(`values.${value.key}`)}
                   </h4>
+                  <p className="text-sm text-gray-400 px-2">
+                    {t(`values.${value.key}Desc`)}
+                  </p>
                 </motion.div>
               );
             })}

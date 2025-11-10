@@ -9,7 +9,7 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black" />
+      <div className="absolute inset-0 bg-gradient-to-br from-muted to-background" />
       
       <motion.div
         initial={{ opacity: 0, y: 20 }}

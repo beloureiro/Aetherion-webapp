@@ -2,56 +2,93 @@
   "navigation": {
     "home": "Início",
     "whoWeAre": "Quem Somos",
-    "ourFocus": "Nosso Foco",
+    "ourFocus": "Áreas de Negócio",
     "whatWeDo": "O Que Fazemos",
     "partners": "Parceiros",
     "trackRecord": "Histórico",
     "contact": "Contato"
   },
   "hero": {
-    "title": "Investindo no Futuro",
-    "subtitle": "Soluções inovadoras em gestão de investimentos",
-    "cta": "Saiba Mais"
+    "title": "Empowering Lives for Generations",
+    "subtitle": "Transformando comunidades através de investimentos sustentáveis em ativos reais não-tradicionais",
+    "cta": "Conheça Nossa Missão"
   },
   "whoWeAre": {
     "title": "Quem Somos",
-    "description": "Somos uma empresa especializada em gestão de investimentos, comprometida com a excelência e resultados sustentáveis.",
+    "description": "Somos especialistas em ativos reais não-tradicionais, aproveitando nossa extensa rede e parcerias estratégicas únicas para criar valor excepcional em setores com desequilíbrio entre oferta e demanda. Nossa missão é construir comunidades prósperas que impactam gerações.",
+    "intro": "A Aetherion é uma plataforma de investimentos focada no desenvolvimento urbano e gestão de ativos reais não-tradicionais. Fundada com a missão de transformar comunidades, combinamos expertise em investimentos com visão de longo prazo para criar valor sustentável.",
+    "philosophy": "Nossa abordagem é construída sobre o alinhamento de interesses com nossos parceiros e investidores. Acreditamos que o sucesso se mede não apenas em retornos financeiros, mas no impacto positivo que geramos nas comunidades onde atuamos.",
     "values": {
-      "title": "Nossos Valores",
-      "integrity": "Integridade",
-      "excellence": "Excelência",
-      "innovation": "Inovação",
-      "partnership": "Parceria"
+      "title": "Nossos Pilares",
+      "integrity": "Sustentabilidade",
+      "integrityDesc": "Compromisso com desenvolvimento responsável e consciente para preservar o meio ambiente",
+      "excellence": "Impacto Geracional",
+      "excellenceDesc": "Criamos valor que transcende gerações, construindo legados duradouros",
+      "innovation": "Comunidades Prósperas",
+      "innovationDesc": "Desenvolvemos projetos que transformam e fortalecem as comunidades locais",
+      "partnership": "Parcerias Estratégicas",
+      "partnershipDesc": "Cultivamos relacionamentos de longo prazo baseados em confiança e resultados mútuos"
     }
   },
   "ourFocus": {
-    "title": "Nosso Foco",
+    "title": "Áreas de Negócio",
+    "subtitle": "Três divisões especializadas focadas em ativos reais não-tradicionais",
     "areas": {
-      "private": "Private Equity",
-      "real": "Real Estate",
-      "venture": "Venture Capital",
-      "infrastructure": "Infraestrutura"
+      "private": "Industrial & Logistics",
+      "privateDesc": "Soluções em cadeia de suprimentos e armazenagem em setores de ativos reais não-tradicionais, aproveitando desequilíbrios entre oferta e demanda.",
+      "real": "Land Bank",
+      "realDesc": "Aquisição estratégica de terras e iniciativas de desenvolvimento com foco em criação de valor de longo prazo.",
+      "venture": "Hospitality & Residential",
+      "ventureDesc": "Desenvolvimento de empreendimentos de acomodação e espaços residenciais que criam comunidades vibrantes."
     }
   },
   "whatWeDo": {
     "title": "O Que Fazemos",
+    "intro": "Oferecemos serviços especializados em gestão e desenvolvimento de ativos reais não-tradicionais",
     "services": {
-      "management": "Gestão de Ativos",
-      "advisory": "Consultoria Financeira",
-      "structuring": "Estruturação de Fundos",
-      "analysis": "Análise de Investimentos"
+      "management": "Desenvolvimento Urbano",
+      "managementDesc": "Transformamos espaços urbanos através de projetos inovadores que equilibram sustentabilidade e crescimento econômico.",
+      "advisory": "Soluções Logísticas",
+      "advisoryDesc": "Desenvolvemos infraestrutura logística e industrial para atender demandas do mercado moderno.",
+      "structuring": "Gestão de Portfólio Imobiliário",
+      "structuringDesc": "Gestão ativa de ativos imobiliários com foco em maximização de valor e performance operacional.",
+      "analysis": "Estruturação de Parcerias",
+      "analysisDesc": "Criamos estruturas de parceria alinhadas que potencializam resultados e dividem riscos de forma equilibrada."
     }
   },
   "partners": {
     "title": "Parceiros Executivos",
-    "team": "Nossa Equipe"
+    "subtitle": "Liderança experiente com histórico comprovado em investimentos e desenvolvimento",
+    "team": "Nossa Equipe",
+    "members": {
+      "member1": {
+        "name": "João Silva",
+        "role": "Sócio Diretor",
+        "experience": "20+ anos"
+      },
+      "member2": {
+        "name": "Maria Santos",
+        "role": "Diretora Financeira",
+        "experience": "15+ anos"
+      },
+      "member3": {
+        "name": "Pedro Costa",
+        "role": "Diretor de Investimentos",
+        "experience": "18+ anos"
+      },
+      "member4": {
+        "name": "Ana Ferreira",
+        "role": "Diretora de Operações",
+        "experience": "12+ anos"
+      }
+    }
   },
   "trackRecord": {
-    "title": "Histórico",
-    "yearsExperience": "Anos de Experiência",
-    "assetsManaged": "Ativos Sob Gestão",
-    "investments": "Investimentos Realizados",
-    "returns": "Retorno Médio"
+    "title": "Nosso Impacto",
+    "yearsExperience": "Anos Transformando Comunidades",
+    "assetsManaged": "Valor em Ativos Desenvolvidos",
+    "investments": "Projetos Concluídos",
+    "returns": "Taxa de Sucesso"
   },
   "contact": {
     "title": "Entre em Contato",

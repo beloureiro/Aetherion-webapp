@@ -1,4 +1,17 @@
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
+
+export async function generateViewport({ params }: { params: Promise<{ locale: string }> }): Promise<Viewport> {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+    themeColor: [
+      { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+      { media: '(prefers-color-scheme: dark)', color: '#000000' },
+    ],
+  };
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -87,16 +100,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ],
     },
     manifest: '/manifest.json',
-    themeColor: [
-      { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-      { media: '(prefers-color-scheme: dark)', color: '#000000' },
-    ],
-    viewport: {
-      width: 'device-width',
-      initialScale: 1,
-      maximumScale: 5,
-      userScalable: true,
-    },
     verification: {
       google: 'google-site-verification-code',
       yandex: 'yandex-verification-code',
