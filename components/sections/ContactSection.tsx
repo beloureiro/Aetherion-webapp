@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Send } from 'lucide-react';
 
 export default function ContactSection() {
   const t = useTranslations('contact');
@@ -68,10 +68,10 @@ export default function ContactSection() {
           <div className="w-24 h-0.5 bg-white mx-auto mb-8" />
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -131,7 +131,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-white resize-none text-white"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-white resize-none text-white"
                 />
               </div>
 
@@ -164,41 +164,6 @@ export default function ContactSection() {
                 </motion.p>
               )}
             </form>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-8"
-          >
-            <div>
-              <h3 className="text-2xl font-serif font-light text-white mb-6">
-                {t('info.address')}
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <MapPin className="w-6 h-6 text-white mt-1" />
-                  <div>
-                    <p className="text-gray-300">
-                      Avenida da Liberdade, 245<br />
-                      1250-142 Lisboa<br />
-                      Portugal
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-4">
-                  <Phone className="w-6 h-6 text-white" />
-                  <p className="text-gray-300">+351 21 123 4567</p>
-                </div>
-
-                <div className="flex items-center space-x-4">
-                  <Mail className="w-6 h-6 text-white" />
-                  <p className="text-gray-300">Contact@aetherion.es</p>
-                </div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Shield, Target, Lightbulb, Users } from 'lucide-react';
+import { Leaf, TrendingUp, Users as UsersIcon, Handshake } from 'lucide-react';
 
 export default function WhoWeAreSection() {
   const t = useTranslations('whoWeAre');
@@ -12,10 +12,10 @@ export default function WhoWeAreSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const values = [
-    { icon: Shield, key: 'integrity' },
-    { icon: Target, key: 'excellence' },
-    { icon: Lightbulb, key: 'innovation' },
-    { icon: Users, key: 'partnership' },
+    { icon: Leaf, key: 'integrity' },
+    { icon: TrendingUp, key: 'excellence' },
+    { icon: UsersIcon, key: 'innovation' },
+    { icon: Handshake, key: 'partnership' },
   ];
 
   return (
@@ -64,8 +64,11 @@ export default function WhoWeAreSection() {
                   transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
                   className="text-center group"
                 >
-                  <div className="inline-flex items-center justify-center w-20 h-20 mb-4 bg-muted rounded-full group-hover:bg-white transition-colors">
-                    <Icon className="w-10 h-10 text-white group-hover:text-black" />
+                  <div className="inline-flex items-center justify-center mb-4">
+                    <Icon
+                      className="w-12 h-12 text-white group-hover:scale-110 transition-transform"
+                      strokeWidth={1}
+                    />
                   </div>
                   <h4 className="text-lg font-light tracking-wide text-white uppercase mb-2">
                     {t(`values.${value.key}`)}

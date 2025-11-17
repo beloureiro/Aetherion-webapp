@@ -3,9 +3,6 @@
     "home": "Home",
     "whoWeAre": "Who We Are",
     "ourFocus": "Business Areas",
-    "whatWeDo": "What We Do",
-    "partners": "Partners",
-    "trackRecord": "Our Impact",
     "contact": "Contact"
   },
   "hero": {
@@ -34,32 +31,6 @@
     "title": "Business Areas",
     "subtitle": "Three specialized divisions focused on non-traditional real assets",
     "areas": {
-      "private": "Industrial & Logistics",
-      "privateDesc": "Supply chain and warehousing solutions in non-traditional real asset sectors, leveraging supply-demand imbalances.",
-      "real": "Land Bank",
-      "realDesc": "Strategic land acquisition and development initiatives with focus on long-term value creation.",
-      "venture": "Hospitality & Residential",
-      "ventureDesc": "Development of accommodation and residential property ventures that create vibrant communities."
-    }
-  },
-  "whatWeDo": {
-    "title": "What We Do",
-    "intro": "We offer specialized services in non-traditional real asset management and development",
-    "services": {
-      "management": "Urban Development",
-      "managementDesc": "We transform urban spaces through innovative projects that balance sustainability and economic growth.",
-      "advisory": "Logistics Solutions",
-      "advisoryDesc": "We develop logistics and industrial infrastructure to meet modern market demands.",
-      "structuring": "Real Estate Portfolio Management",
-      "structuringDesc": "Active management of real estate assets with focus on value maximization and operational performance.",
-      "analysis": "Partnership Structuring",
-      "analysisDesc": "We create aligned partnership structures that enhance results and balance risks fairly."
-    }
-  },
-  "partners": {
-    "title": "Our Team",
-    "subtitle": "Three specialized divisions focused on non-traditional real assets",
-    "divisions": {
       "industrial": {
         "title": "Industrial & Logistics",
         "description": "We operate in the development and management of high-performance industrial and logistics assets throughout the Iberian Peninsula, offering solutions designed to meet the demands of leading operators and investors. Our integrated approach ensures efficiency, scalability and sustainable value creation."

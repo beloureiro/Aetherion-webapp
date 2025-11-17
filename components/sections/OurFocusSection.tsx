@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { Factory, Landmark, Hotel } from 'lucide-react';
 
 export default function OurFocusSection() {
   const t = useTranslations('ourFocus');
@@ -11,9 +12,9 @@ export default function OurFocusSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const areas = [
-    { key: 'private' },
-    { key: 'real' },
-    { key: 'venture' },
+    { key: 'industrial', icon: Factory },
+    { key: 'landBank', icon: Landmark },
+    { key: 'hospitality', icon: Hotel },
   ];
 
   return (
@@ -35,21 +36,28 @@ export default function OurFocusSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {areas.map((area, index) => {
+            const Icon = area.icon;
             return (
               <motion.div
                 key={area.key}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative bg-card shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-border hover:border-gray-600"
+                className="bg-card shadow-lg p-8 hover:shadow-xl transition-all border border-border hover:border-gray-600 group"
               >
-                <h3 className="text-xl md:text-2xl font-serif font-light text-white mb-4 tracking-wide">
-                  {t(`areas.${area.key}`)}
+                <div className="mb-6">
+                  <Icon
+                    className="w-12 h-12 text-white group-hover:scale-110 transition-transform"
+                    strokeWidth={1}
+                  />
+                </div>
+                <h3 className="text-2xl font-serif text-white mb-4">
+                  {t(`areas.${area.key}.title`)}
                 </h3>
-                <p className="text-sm md:text-base text-gray-400 leading-relaxed">
-                  {t(`areas.${area.key}Desc`)}
+                <p className="text-gray-400 leading-relaxed">
+                  {t(`areas.${area.key}.description`)}
                 </p>
               </motion.div>
             );

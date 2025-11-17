@@ -3,13 +3,10 @@
     "home": "Inicio",
     "whoWeAre": "Quiénes Somos",
     "ourFocus": "Áreas de Negocio",
-    "whatWeDo": "Qué Hacemos",
-    "partners": "Socios",
-    "trackRecord": "Nuestro Impacto",
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Empowering Lives for Generations",
+    "title": "Empoderando Vidas para Generaciones",
     "subtitle": "Transformando comunidades a través de inversiones sostenibles en activos reales no tradicionales",
     "cta": "Descubre Nuestra Misión"
   },
@@ -34,32 +31,6 @@
     "title": "Áreas de Negocio",
     "subtitle": "Tres divisiones especializadas enfocadas en activos reales no tradicionales",
     "areas": {
-      "private": "Industrial & Logistics",
-      "privateDesc": "Soluciones en cadena de suministros y almacenaje en sectores de activos reales no tradicionales, aprovechando desequilibrios entre oferta y demanda.",
-      "real": "Land Bank",
-      "realDesc": "Adquisición estratégica de tierras e iniciativas de desarrollo con foco en creación de valor a largo plazo.",
-      "venture": "Hospitality & Residential",
-      "ventureDesc": "Desarrollo de emprendimientos de alojamiento y espacios residenciales que crean comunidades vibrantes."
-    }
-  },
-  "whatWeDo": {
-    "title": "Qué Hacemos",
-    "intro": "Ofrecemos servicios especializados en gestión y desarrollo de activos reales no tradicionales",
-    "services": {
-      "management": "Desarrollo Urbano",
-      "managementDesc": "Transformamos espacios urbanos a través de proyectos innovadores que equilibran sostenibilidad y crecimiento económico.",
-      "advisory": "Soluciones Logísticas",
-      "advisoryDesc": "Desarrollamos infraestructura logística e industrial para atender demandas del mercado moderno.",
-      "structuring": "Gestión de Portafolio Inmobiliario",
-      "structuringDesc": "Gestión activa de activos inmobiliarios con foco en maximización de valor y desempeño operacional.",
-      "analysis": "Estructuración de Alianzas",
-      "analysisDesc": "Creamos estructuras de alianza alineadas que potencian resultados y dividen riesgos de forma equilibrada."
-    }
-  },
-  "partners": {
-    "title": "Nuestro Equipo",
-    "subtitle": "Tres divisiones especializadas enfocadas en activos reales no tradicionales",
-    "divisions": {
       "industrial": {
         "title": "Industrial & Logistics",
         "description": "Actuamos en el desarrollo y gestión de activos industriales y logísticos de alto rendimiento en toda la Península Ibérica, ofreciendo soluciones diseñadas para responder a las exigencias de operadores e inversores de referencia. Nuestro enfoque integrado asegura eficiencia, escalabilidad y creación de valor sostenible."
