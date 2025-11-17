@@ -3,7 +3,6 @@ import WhoWeAreSection from '@/components/sections/WhoWeAreSection';
 import OurFocusSection from '@/components/sections/OurFocusSection';
 import WhatWeDoSection from '@/components/sections/WhatWeDoSection';
 import PartnersSection from '@/components/sections/PartnersSection';
-import TrackRecordSection from '@/components/sections/TrackRecordSection';
 import ContactSection from '@/components/sections/ContactSection';
 
 export default function HomePage() {
@@ -14,7 +13,6 @@ export default function HomePage() {
       <OurFocusSection />
       <WhatWeDoSection />
       <PartnersSection />
-      <TrackRecordSection />
       <ContactSection />
     </>
   );

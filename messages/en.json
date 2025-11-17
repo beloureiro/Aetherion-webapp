@@ -57,29 +57,20 @@
     }
   },
   "partners": {
-    "title": "Executive Partners",
-    "subtitle": "Experienced leadership with proven track record in investments and development",
-    "team": "Our Team",
-    "members": {
-      "member1": {
-        "name": "John Silva",
-        "role": "Managing Partner",
-        "experience": "20+ years"
+    "title": "Our Team",
+    "subtitle": "Three specialized divisions focused on non-traditional real assets",
+    "divisions": {
+      "industrial": {
+        "title": "Industrial & Logistics",
+        "description": "We operate in the development and management of high-performance industrial and logistics assets throughout the Iberian Peninsula, offering solutions designed to meet the demands of leading operators and investors. Our integrated approach ensures efficiency, scalability and sustainable value creation."
       },
-      "member2": {
-        "name": "Maria Santos",
-        "role": "Chief Financial Officer",
-        "experience": "15+ years"
+      "landBank": {
+        "title": "Land Bank",
+        "description": "We specialize in the acquisition, management and strategic enhancement of land in key locations across the Iberian Peninsula. With a holistic and return-oriented vision, we transform raw land into premium opportunities, preparing each asset for its best and most profitable use in the future."
       },
-      "member3": {
-        "name": "Peter Costa",
-        "role": "Chief Investment Officer",
-        "experience": "18+ years"
-      },
-      "member4": {
-        "name": "Ana Ferreira",
-        "role": "Chief Operating Officer",
-        "experience": "12+ years"
+      "hospitality": {
+        "title": "Hospitality & Residential",
+        "description": "We develop distinctive residential and hospitality projects in strategic markets across the Iberian Peninsula, combining thoughtful design, comfort and exclusivity. We create experiences that elevate lifestyle and reinforce the positioning of each development in the premium segment."
       }
     }
   },

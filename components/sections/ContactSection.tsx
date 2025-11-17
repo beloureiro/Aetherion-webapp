@@ -21,12 +21,28 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormStatus('sending');
-    
-    setTimeout(() => {
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao enviar mensagem');
+      }
+
       setFormStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setFormStatus('idle'), 3000);
-    }, 1500);
+      setTimeout(() => setFormStatus('idle'), 5000);
+    } catch (error) {
+      console.error('Erro ao enviar email:', error);
+      setFormStatus('error');
+      setTimeout(() => setFormStatus('idle'), 5000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -179,7 +195,7 @@ export default function ContactSection() {
 
                 <div className="flex items-center space-x-4">
                   <Mail className="w-6 h-6 text-white" />
-                  <p className="text-gray-300">contact@aetherion.com</p>
+                  <p className="text-gray-300">Contact@aetherion.es</p>
                 </div>
               </div>
             </div>

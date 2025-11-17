@@ -57,29 +57,20 @@
     }
   },
   "partners": {
-    "title": "Parceiros Executivos",
-    "subtitle": "Liderança experiente com histórico comprovado em investimentos e desenvolvimento",
-    "team": "Nossa Equipe",
-    "members": {
-      "member1": {
-        "name": "João Silva",
-        "role": "Sócio Diretor",
-        "experience": "20+ anos"
+    "title": "Nossa Equipe",
+    "subtitle": "Três divisões especializadas focadas em ativos reais não-tradicionais",
+    "divisions": {
+      "industrial": {
+        "title": "Industrial & Logistics",
+        "description": "Atuamos no desenvolvimento e gestão de ativos industriais e logísticos de alta performance em toda a Península Ibérica, oferecendo soluções desenhadas para responder às exigências de operadores e investidores de referência. A nossa abordagem integrada assegura eficiência, escalabilidade e criação de valor sustentável."
       },
-      "member2": {
-        "name": "Maria Santos",
-        "role": "Diretora Financeira",
-        "experience": "15+ anos"
+      "landBank": {
+        "title": "Land Bank",
+        "description": "Especializamo-nos na aquisição, gestão e valorização estratégica de terrenos em localizações chave da Península Ibérica. Com uma visão holística e orientada para retorno, transformamos solo bruto em oportunidades premium, preparando cada ativo para o seu melhor e mais rentável uso no futuro."
       },
-      "member3": {
-        "name": "Pedro Costa",
-        "role": "Diretor de Investimentos",
-        "experience": "18+ anos"
-      },
-      "member4": {
-        "name": "Ana Ferreira",
-        "role": "Diretora de Operações",
-        "experience": "12+ anos"
+      "hospitality": {
+        "title": "Hospitality & Residential",
+        "description": "Desenvolvemos projetos residenciais e de hospitalidade distintivos em mercados estratégicos da Península Ibérica, combinando design cuidado, conforto e exclusividade. Criamos experiências que elevam o estilo de vida e reforçam o posicionamento de cada empreendimento no segmento premium."
       }
     }
   },

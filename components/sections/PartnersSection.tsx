@@ -4,18 +4,17 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { User } from 'lucide-react';
+import { Factory, Landmark, Hotel } from 'lucide-react';
 
 export default function PartnersSection() {
   const t = useTranslations('partners');
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const partners = [
-    { key: 'member1' },
-    { key: 'member2' },
-    { key: 'member3' },
-    { key: 'member4' },
+  const divisions = [
+    { key: 'industrial', icon: Factory },
+    { key: 'landBank', icon: Landmark },
+    { key: 'hospitality', icon: Hotel },
   ];
 
   return (
@@ -37,29 +36,29 @@ export default function PartnersSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {partners.map((partner, index) => (
-            <motion.div
-              key={partner.key}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card shadow-lg p-6 text-center hover:shadow-xl transition-shadow border border-border hover:border-gray-600"
-            >
-              <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-muted to-secondary rounded-full flex items-center justify-center">
-                <User className="w-12 h-12 text-white" />
-              </div>
-              <h3 className="text-xl font-serif text-white mb-1">
-                {t(`members.${partner.key}.name`)}
-              </h3>
-              <p className="text-gray-400 font-light tracking-wider uppercase text-sm mb-2">
-                {t(`members.${partner.key}.role`)}
-              </p>
-              <p className="text-sm text-gray-500">
-                {t(`members.${partner.key}.experience`)}
-              </p>
-            </motion.div>
-          ))}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {divisions.map((division, index) => {
+            const Icon = division.icon;
+            return (
+              <motion.div
+                key={division.key}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-card shadow-lg p-8 hover:shadow-xl transition-all border border-border hover:border-gray-600"
+              >
+                <div className="w-16 h-16 mb-6 bg-gradient-to-br from-muted to-secondary rounded-lg flex items-center justify-center">
+                  <Icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-serif text-white mb-4">
+                  {t(`divisions.${division.key}.title`)}
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  {t(`divisions.${division.key}.description`)}
+                </p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

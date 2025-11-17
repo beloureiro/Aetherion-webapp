@@ -15,6 +15,7 @@ export default function Header() {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLangOpen, setIsLangOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,25 +25,39 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (isLangOpen && !target.closest('.relative')) {
+        setIsLangOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isLangOpen]);
+
   const navItems = [
     { href: '#home', label: t('home') },
     { href: '#who-we-are', label: t('whoWeAre') },
     { href: '#our-focus', label: t('ourFocus') },
     { href: '#what-we-do', label: t('whatWeDo') },
     { href: '#partners', label: t('partners') },
-    { href: '#track-record', label: t('trackRecord') },
     { href: '#contact', label: t('contact') },
   ];
 
-  const switchLocale = () => {
-    let newLocale = 'es';
-    if (locale === 'es') newLocale = 'pt';
-    else if (locale === 'pt') newLocale = 'en';
-    else if (locale === 'en') newLocale = 'es';
+  const languages = [
+    { code: 'es', label: 'Español', flag: 'ES' },
+    { code: 'pt', label: 'Português', flag: 'PT' },
+    { code: 'en', label: 'English', flag: 'EN' },
+  ];
 
+  const switchLocale = (newLocale: string) => {
     const path = pathname.replace(`/${locale}`, `/${newLocale}`);
     router.push(path);
+    setIsLangOpen(false);
   };
+
+  const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
 
   return (
     <motion.header
@@ -68,17 +83,41 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
-            
-            <button
-              onClick={switchLocale}
-              className="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-gray-600 hover:border-white hover:bg-white hover:text-black transition-all"
-              aria-label="Switch language"
-            >
-              <Globe className="w-4 h-4" />
-              <span className="text-sm font-medium">
-                {locale === 'es' ? 'PT' : locale === 'pt' ? 'EN' : 'ES'}
-              </span>
-            </button>
+
+            <div className="relative">
+              <button
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-gray-600 hover:border-white hover:bg-white/10 transition-all"
+                aria-label="Select language"
+              >
+                <Globe className="w-4 h-4" />
+                <span className="text-sm font-medium">{currentLanguage.flag}</span>
+              </button>
+
+              <AnimatePresence>
+                {isLangOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute right-0 mt-2 w-40 bg-card border border-border rounded-lg shadow-xl overflow-hidden z-50"
+                  >
+                    {languages.map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => switchLocale(lang.code)}
+                        className={`w-full px-4 py-2 text-left text-sm hover:bg-muted transition-colors ${
+                          locale === lang.code ? 'bg-muted text-white font-medium' : 'text-gray-300'
+                        }`}
+                      >
+                        <span className="font-medium">{lang.flag}</span> {lang.label}
+                      </button>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </div>
 
           <button
@@ -110,16 +149,29 @@ export default function Header() {
                   {item.label}
                 </a>
               ))}
-              
-              <button
-                onClick={switchLocale}
-                className="flex items-center space-x-2 w-full py-2 text-left"
-              >
-                <Globe className="w-4 h-4" />
-                <span>
-                  {locale === 'es' ? 'Mudar para Português' : locale === 'pt' ? 'Switch to English' : 'Cambiar a Español'}
-                </span>
-              </button>
+
+              <div className="border-t border-border pt-4 mt-4">
+                <div className="flex items-center space-x-2 mb-3">
+                  <Globe className="w-4 h-4 text-gray-400" />
+                  <span className="text-sm text-gray-400 uppercase tracking-wider">Idioma</span>
+                </div>
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => {
+                      switchLocale(lang.code);
+                      setIsMenuOpen(false);
+                    }}
+                    className={`w-full px-3 py-2 text-left rounded transition-colors ${
+                      locale === lang.code
+                        ? 'bg-muted text-white font-medium'
+                        : 'text-gray-300 hover:bg-muted/50'
+                    }`}
+                  >
+                    <span className="font-medium">{lang.flag}</span> {lang.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </motion.div>
         )}

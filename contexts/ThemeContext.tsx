@@ -17,16 +17,13 @@ const ThemeContext = createContext<ThemeContextType>({
 });
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('black');
+  const [theme, setTheme] = useState<Theme>('blue');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    const savedTheme = localStorage.getItem('aetherion-theme') as Theme;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      applyTheme(savedTheme);
-    }
+    // Sempre aplica tema azul (decisão final do cliente)
+    applyTheme('blue');
   }, []);
 
   const applyTheme = (newTheme: Theme) => {
