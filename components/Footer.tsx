@@ -14,7 +14,7 @@ export default function Footer() {
 
           <div className="text-sm text-gray-400 space-y-1">
             <p>Avenida da Liberdade, 245 · 1250-142 Lisboa · Portugal</p>
-            <p>Contact@aetherion.es · +351 21 123 4567</p>
+            <p>info@aetherion.es · +351 21 123 4567</p>
           </div>
 
           <p className="text-sm text-gray-500">

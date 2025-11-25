@@ -13,7 +13,7 @@ EMAIL_SERVER_PORT=587
 EMAIL_SERVER_USER=bc@inmotion.today
 EMAIL_SERVER_PASSWORD=sua-senha-segura
 EMAIL_FROM=bc@inmotion.today
-EMAIL_TO=Contact@aetherion.es
+EMAIL_TO=info@aetherion.es
 EMAIL_CC=bc@inmotion.today
 ```
 
@@ -24,7 +24,7 @@ EMAIL_CC=bc@inmotion.today
 - `EMAIL_SERVER_USER`: Email para autenticação SMTP (bc@inmotion.today)
 - `EMAIL_SERVER_PASSWORD`: Senha do email para autenticação SMTP
 - `EMAIL_FROM`: Email do remetente (bc@inmotion.today)
-- `EMAIL_TO`: Email principal do destinatário (Contact@aetherion.es)
+- `EMAIL_TO`: Email principal do destinatário (info@aetherion.es)
 - `EMAIL_CC`: Email que receberá cópia das mensagens (bc@inmotion.today)
 
 ## Pré-requisitos na Microsoft 365
@@ -51,7 +51,7 @@ O formulário de contato está implementado no componente `components/sections/C
 
 1. Envia os dados para o endpoint `/api/contact` via método POST
 2. A API processa os dados e envia o email para:
-   - **Destinatário principal**: Contact@aetherion.es
+   - **Destinatário principal**: info@aetherion.es
    - **Cópia (CC)**: bc@inmotion.today
 3. Exibe uma notificação ao usuário informando o status do envio
 

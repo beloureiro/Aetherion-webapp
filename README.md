@@ -149,7 +149,7 @@ Private and Confidential - Aetherion
 Avenida da Liberdade, 245
 1250-142 Lisboa, Portugal
 +351 21 123 4567
-contact@aetherion.com
+info@aetherion.es
 
 ## 🎯 Mission
 
