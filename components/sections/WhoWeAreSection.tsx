@@ -2,14 +2,10 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
 import { Leaf, TrendingUp, Users as UsersIcon, Handshake } from 'lucide-react';
 
 export default function WhoWeAreSection() {
   const t = useTranslations('whoWeAre');
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const values = [
     { icon: Leaf, key: 'integrity' },
@@ -19,13 +15,14 @@ export default function WhoWeAreSection() {
   ];
 
   return (
-    <section id="who-we-are" className="py-16 md:py-24 bg-card relative" ref={ref}>
+    <section id="who-we-are" className="py-16 md:py-24 bg-card relative">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-light text-white mb-2">
@@ -46,8 +43,9 @@ export default function WhoWeAreSection() {
         <div className="mt-16">
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
             className="text-2xl md:text-3xl font-serif font-light text-center text-white mb-8"
           >
             {t('values.title')}
@@ -60,8 +58,13 @@ export default function WhoWeAreSection() {
                 <motion.div
                   key={value.key}
                   initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{
+                    duration: 0.6,
+                    delay: 0.3 + index * 0.1,
+                    ease: [0.25, 0.1, 0.25, 1]
+                  }}
                   className="text-center group"
                 >
                   <div className="inline-flex items-center justify-center mb-4">

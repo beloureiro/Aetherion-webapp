@@ -25,23 +25,23 @@
     --gray-800: 38 38 38;
     --gray-900: 23 23 23;
     
-    /* Mapeamento semântico - PRETO PREDOMINANTE (padrão) */
+    /* Mapeamento semântico - AZUL PREDOMINANTE (padrão - decisão do cliente) */
     /* NOTA: Estas variáveis são alteradas dinamicamente pelo ThemeContext */
-    /* Tema Preto: background=#000, card=#171717, muted=#262626, border=#262626 */
     /* Tema Azul: background=#152A3B, card=#1B3449, muted=#122432, border=#213F58 */
-    --background: var(--black);
+    /* Tema Preto: background=#000, card=#171717, muted=#262626, border=#262626 */
+    --background: 21 42 59;
     --foreground: var(--white);
-    --card: var(--gray-900);
+    --card: 27 52 73;
     --card-foreground: var(--white);
-    --muted: var(--gray-800);
+    --muted: 18 36 50;
     --muted-foreground: var(--gray-300);
-    --border: var(--gray-800);
-    --input: var(--gray-900);
+    --border: 33 63 88;
+    --input: 21 42 59;
 
     /* Cores de ação */
     --primary: var(--white);
     --primary-foreground: var(--black);
-    --secondary: var(--gray-800);
+    --secondary: 27 52 73;
     --secondary-foreground: var(--white);
     --accent: var(--gray-100);
     --accent-foreground: var(--black);
@@ -52,18 +52,18 @@
   }
 
   .dark {
-    /* Modo escuro - inverte preto e branco */
-    --background: var(--black);
+    /* Modo escuro - tema azul (decisão do cliente) */
+    --background: 21 42 59;
     --foreground: var(--white);
-    --card: var(--gray-900);
+    --card: 27 52 73;
     --card-foreground: var(--white);
-    --muted: var(--gray-800);
+    --muted: 18 36 50;
     --muted-foreground: var(--gray-300);
-    --border: var(--gray-800);
-    --input: var(--gray-800);
+    --border: 33 63 88;
+    --input: 21 42 59;
     --primary: var(--white);
     --primary-foreground: var(--black);
-    --secondary: var(--gray-800);
+    --secondary: 27 52 73;
     --secondary-foreground: var(--white);
     --accent: var(--gray-100);
     --accent-foreground: var(--black);
