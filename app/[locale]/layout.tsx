@@ -48,7 +48,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${inter.variable} ${playfair.variable} ${crimson.variable} font-sans`}>
+      <body className={`${inter.variable} ${playfair.variable} ${crimson.variable} font-sans`} suppressHydrationWarning>
         <ThemeProvider>
           <NextIntlClientProvider messages={messages}>
             <div className="min-h-screen flex flex-col">

@@ -30,9 +30,19 @@ export default function HeroSection() {
         </motion.p>
 
         <motion.a
-          href="#who-we-are"
+          href="#our-focus"
           initial={false}
-          className="inline-flex items-center px-10 py-4 text-sm font-light tracking-widest uppercase text-black bg-white hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl border border-white"
+          whileHover={{
+            borderColor: 'rgba(255, 255, 255, 0.3)'
+          }}
+          className="inline-flex items-center px-6 py-3 text-sm font-light tracking-wider uppercase text-white transition-all duration-300"
+          style={{
+            background: 'transparent',
+            backdropFilter: 'blur(20px)',
+            WebkitBackdropFilter: 'blur(20px)',
+            border: '1px solid rgba(255, 255, 255, 0.2)',
+            borderRadius: '2px'
+          }}
         >
           {t('cta')}
         </motion.a>
