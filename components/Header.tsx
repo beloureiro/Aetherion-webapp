@@ -81,7 +81,8 @@ export default function Header() {
               </a>
             ))}
 
-            <div className="relative">
+            {/* Language switcher - hidden for now, can be re-enabled later */}
+            <div className="relative hidden">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-gray-600 hover:border-white hover:bg-white/10 transition-all"
@@ -147,7 +148,8 @@ export default function Header() {
                 </a>
               ))}
 
-              <div className="border-t border-border pt-4 mt-4">
+              {/* Language switcher mobile - hidden for now, can be re-enabled later */}
+              <div className="border-t border-border pt-4 mt-4 hidden">
                 <div className="flex items-center space-x-2 mb-3">
                   <Globe className="w-4 h-4 text-gray-400" />
                   <span className="text-sm text-gray-400 uppercase tracking-wider">Idioma</span>

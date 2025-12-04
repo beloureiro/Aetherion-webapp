@@ -13,8 +13,8 @@ export default function Footer() {
           <h3 className="text-xl font-serif tracking-wider">AETHERION</h3>
 
           <div className="text-sm text-gray-400 space-y-1">
-            <p>Avenida da Liberdade, 245 · 1250-142 Lisboa · Portugal</p>
-            <p>info@aetherion.es · +351 21 123 4567</p>
+            <p>Calle Antonio Maura 7, sexta planta, 28014 Madrid (Spain)</p>
+            <p>info@aetherion.es</p>
           </div>
 
           <p className="text-sm text-gray-500">
