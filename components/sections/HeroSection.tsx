@@ -17,14 +17,14 @@ export default function HeroSection() {
       >
         <motion.h1
           initial={false}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-light tracking-tight text-white mb-6"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-light tracking-tight text-white mb-8"
         >
           {t('title')}
         </motion.h1>
 
         <motion.p
           initial={false}
-          className="text-lg sm:text-xl md:text-2xl font-light tracking-wide text-gray-300 mb-8 max-w-3xl mx-auto"
+          className="text-sm sm:text-base md:text-lg font-light tracking-wide text-gray-400 mb-12 max-w-5xl mx-auto leading-loose"
         >
           {t('subtitle')}
         </motion.p>
